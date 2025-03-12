@@ -3,6 +3,7 @@ package cleancode.studycafe.tobe.io;
 import cleancode.studycafe.tobe.model.StudyCafeLockerPass;
 import cleancode.studycafe.tobe.model.StudyCafePass;
 
+import cleancode.studycafe.tobe.model.collection.StudyCafePassList;
 import java.util.List;
 
 public class OutputHandler {
@@ -22,7 +23,7 @@ public class OutputHandler {
         System.out.println("1. 시간 이용권(자유석) | 2. 주단위 이용권(자유석) | 3. 1인 고정석");
     }
 
-    public void showPassListForSelection(List<StudyCafePass> passes) {
+    public void showPassListForSelection(StudyCafePassList passes) {
         System.out.println();
         System.out.println("이용권 목록");
         for (int index = 0; index < passes.size(); index++) {
