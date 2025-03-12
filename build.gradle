@@ -14,8 +14,14 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.projectlombok:lombok:1.18.28'
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
     testImplementation("org.assertj:assertj-core:3.25.3")
+    annotationProcessor("org.projectlombok:lombok:1.18.28")
+
+
+    // Add SLF4J API
+    implementation 'org.slf4j:slf4j-api:2.0.13'
 }
 
 tasks.named('test') {
